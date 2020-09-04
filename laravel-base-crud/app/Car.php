@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\CarController;
 
 class Car extends Model
 {
@@ -14,8 +15,9 @@ class Car extends Model
     'Model',
     'transmission',
     'fuel_type',
-    'Doors'
-    
+    'Doors',
+    'Price'
+
   ];
 
 

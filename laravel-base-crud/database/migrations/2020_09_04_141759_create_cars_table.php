@@ -23,6 +23,7 @@ class CreateCarsTable extends Migration
             $table->string('transmission')->nullable();
             $table->string('fuel_type');
             $table->integer('Doors');
+            $table->float('Price', 8, 2);
         });
     }
 
