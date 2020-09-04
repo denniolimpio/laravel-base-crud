@@ -7,7 +7,7 @@ use App\CarController;
 
 class Car extends Model
 {
-  protected $fillable [
+  protected $fillable = [
 
     'manufacturer',
     'Model_Year',
