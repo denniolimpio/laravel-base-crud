@@ -7,7 +7,12 @@
       @foreach ($cars as $car )
         <li>
 
-          {{$car->manufacturer}} - {{ $car->Model}}
+        <strong>Manufacturer:</strong>  {{$car->manufacturer}} - <br> <strong>Strong:</strong> {{ $car->Model}}
+        <div>
+
+          <a href="{{route('cars.show', $car)}}"> More info</a>
+
+        </div>
 
         </li>
 
