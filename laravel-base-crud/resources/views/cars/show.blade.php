@@ -18,7 +18,7 @@
     Description: {{ $car->description}}
 
     <li>
-      fuel type: {{ $car->fuel_type}} -
+      fuel type: {{ $car->fuel_type}}
 
     </li>
 

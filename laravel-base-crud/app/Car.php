@@ -16,7 +16,7 @@ class Car extends Model
     'transmission',
     'fuel_type',
     'Doors',
-    'Price'
+    'Price',
 
   ];
 

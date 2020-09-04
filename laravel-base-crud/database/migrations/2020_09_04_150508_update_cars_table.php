@@ -14,7 +14,8 @@ class UpdateCarsTable extends Migration
     public function up()
     {
         Schema::table('cars', function (Blueprint $table) {
-            //
+
+          // $table->float('Price', 8, 2);
         });
     }
 

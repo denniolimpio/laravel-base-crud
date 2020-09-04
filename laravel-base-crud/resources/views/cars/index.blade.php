@@ -1,4 +1,4 @@
-<h1> Pagina lista auto</h1>
+<h1> Car list</h1>
 
 
 <div>
@@ -7,7 +7,7 @@
       @foreach ($cars as $car )
         <li>
 
-        <strong>Manufacturer:</strong>  {{$car->manufacturer}} - <br> <strong>Strong:</strong> {{ $car->Model}}
+        <strong>Manufacturer:</strong>  {{$car->manufacturer}}  <br> <strong>Model:</strong> {{ $car->Model}}
         <div>
 
           <a href="{{route('cars.show', $car)}}"> More info</a>
