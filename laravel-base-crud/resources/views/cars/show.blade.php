@@ -27,6 +27,12 @@
 
     </li>
 
+    <li>
+      Price: {{ $car->price}} $
+
+    </li>
+
+
   </ul>
 
 
