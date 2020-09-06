@@ -11,7 +11,14 @@
         <div>
 
           <a href="{{route('cars.show', $car)}}"> More info</a>
+          <a href="{{route('cars.edit', $car)}}"> Edit Car info</a>
+          <form action="{{route('cars.destroy', $car) }}" method="post"> {{-- controllo il metodo associato alla route da -> riga di comando route:list --}}
 
+            @csrf {{-- token--}}
+            @method("DELETE")
+
+          <input type="submit" name="" value="Delete car">
+          </form>
         </div>
 
         </li>
