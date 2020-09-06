@@ -17,12 +17,12 @@ class CreateCarsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('manufacturer');
-            $table->integer('Model_Year');
+            $table->integer('Model_Year')->nullable();
             $table->text('description', 500)->nullable();
             $table->string('Model');
             $table->string('transmission')->nullable();
-            $table->string('fuel_type');
-            $table->integer('Doors');
+            $table->string('fuel_type')->nullable();
+            $table->integer('Doors')->nullable();
   });
     }
 

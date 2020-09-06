@@ -20,3 +20,6 @@
   </ul>
 
 </div>
+
+
+<a href="{{route('cars.create')}}"> Add new car</a>

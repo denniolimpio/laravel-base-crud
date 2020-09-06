@@ -15,7 +15,7 @@ class UpdateCarsTable extends Migration
     {
         Schema::table('cars', function (Blueprint $table) {
 
-            $table->float('Price', 8, 2);
+            $table->float('Price', 8, 2)->nullable();
 
         });
     }

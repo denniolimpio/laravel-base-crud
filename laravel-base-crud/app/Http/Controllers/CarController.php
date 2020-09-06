@@ -29,7 +29,9 @@ class CarController extends Controller
      */
     public function create()
     {
-        //
+        //ritorno la view
+
+        return view('cars.create');
     }
 
     /**
@@ -40,7 +42,33 @@ class CarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+      //validation
+      //controllo se i campi del form sono compilati correttamente
+
+      $request->validate([
+
+        'Model' => 'required|max:255',
+        // 'Model_Year' => '|date_format:d/m/Y',
+        'Model_Year' => 'integer|between:1905,2021',
+        'transmission' => 'required|max:50',
+        'fuel_type' =>'required|max:50',
+        'Doors' => 'integer|between:2,4',
+        // 'price' =>'required|numeric|',
+        'description' => 'required|max:500',
+
+]);
+//verifico se store riporta i dati inseriti del form
+      // dd($request->all());
+
+        $data = $request->all();
+
+        // salvo i dati nel Database
+        $car = new Car();
+
+        $car->fill($data);
+        $saved = $car->save();
+
     }
 
     /**
